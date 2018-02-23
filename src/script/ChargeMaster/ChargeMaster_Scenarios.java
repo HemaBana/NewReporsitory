@@ -21,7 +21,7 @@ public class ChargeMaster_Scenarios extends BaseTest
 	
 	public void testCharge_Add() throws InterruptedException
 	{
-		
+	
 		String c1=Lib.getCellValue(IAutoConst.XLPATH,"Charge_Add",1,0);
 		String d1=Lib.getCellValue(IAutoConst.XLPATH,"Charge_Add",1,1);
 		String DC=Lib.getCellValue(IAutoConst.XLPATH,"Charge_Add",1,2);
