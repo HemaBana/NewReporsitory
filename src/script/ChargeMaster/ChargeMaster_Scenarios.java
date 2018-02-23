@@ -17,6 +17,7 @@ import pages.ChargeMaster;
 public class ChargeMaster_Scenarios extends BaseTest
 {
 	@Test(priority=1)
+	
 	public void testCharge_Add() throws InterruptedException
 	{
 		
