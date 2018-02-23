@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="91.843">
+  <properties />
+  
+  
+            <testcase name="testPayer_Add" time="29.147" classname="script.PayerSettings.Payer_Add" />
+                <testcase name="testLogin" time="47.316" classname="script.PayerSettings.Payer_Add" />
+                <testcase name="testPayer_Edit" time="15.380" classname="script.PayerSettings.Payer_Add" />
+      
+</testsuite>

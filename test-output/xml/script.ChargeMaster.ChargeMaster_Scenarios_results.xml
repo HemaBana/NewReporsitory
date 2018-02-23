@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="100.537">
+  <properties />
+  
+  
+            <testcase name="testCharge_Edit" time="5.848" classname="script.ChargeMaster.ChargeMaster_Scenarios" />
+                <testcase name="testLogin" time="47.896" classname="script.ChargeMaster.ChargeMaster_Scenarios" />
+                <testcase name="testCharge_Add" time="46.793" classname="script.ChargeMaster.ChargeMaster_Scenarios" />
+      
+</testsuite>
