@@ -29,6 +29,7 @@ public class ChargeMaster_Scenarios extends BaseTest
 		String P1=Lib.getCellValue(IAutoConst.XLPATH,"Charge_Add",1,3);
 		String A1=Lib.getCellValue(IAutoConst.XLPATH,"Charge_Add",1,4);
 		
+		
 		ChargeMaster c =new ChargeMaster(driver);
 		 driver.manage().window().maximize();
 		Thread.sleep(5000);
