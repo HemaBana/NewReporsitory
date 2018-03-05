@@ -63,8 +63,8 @@ public class DocumentManagement_Scenarios extends BaseTest {
         driver.findElement(By.xpath("//textarea[@name='description']")).sendKeys("FileDescription1");
         Thread.sleep(5000);
         d.clickSaveButton();
-        String message=driver.findElement(By.xpath("//div[@class='toast-message']")).getText();
-	    System.out.println(message);
+       /* String message=driver.findElement(By.xpath("//div[@class='toast-message']")).getText();
+	    System.out.println(message);*/
 		
 	}
 	
@@ -77,8 +77,8 @@ public class DocumentManagement_Scenarios extends BaseTest {
         d.clickDeleteIcon();
     	Thread.sleep(3000);
         driver.findElement(By.xpath("//span[text()='Ok']")).click();
-        String message=driver.findElement(By.xpath("//div[@class='toast-message']")).getText();
-	    System.out.println(message);
+/*        String message=driver.findElement(By.xpath("//div[@class='toast-message']")).getText();
+	    System.out.println(message);*/
 	
 	
 }
