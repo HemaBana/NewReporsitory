@@ -49,6 +49,11 @@ public class Payer_Scenarios extends BaseTest{
     	select.selectByIndex(1);
         p.setCity(C1);
         p.setZipcode(zip);
+        Thread.sleep(2000);
+        WebElement PayerType = driver.findElement(By.name("payertype"));
+    	Select select1=new Select(PayerType);
+    	select1.selectByIndex(1);
+        
         p.setPayerId(PId);
         
 
