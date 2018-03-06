@@ -111,6 +111,7 @@ public class Payer_Scenarios extends BaseTest{
          p.setAddress2(Add2);
          driver.findElement(By.xpath("//input[@name='city']")).clear(); 
          p.setCity(C1);
+         
      	WebElement stateDrop = driver.findElement(By.name("state"));
     	Select select=new Select(stateDrop);
     	select.selectByIndex(1);
