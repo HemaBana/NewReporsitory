@@ -19,7 +19,6 @@ public class AuthRep_Scenarios extends BaseTest{
 	@Test(priority=1)
 public void testAuthRep_Add() throws InterruptedException, TimeoutException{
 		
-		
 		AuthorizedRepresentative au =new AuthorizedRepresentative(driver);
 		 driver.manage().window().maximize();
 		Thread.sleep(5000);

@@ -42,7 +42,7 @@ public class DocumentManagement_Scenarios extends BaseTest {
 	    Thread.sleep(7000);
 	   /* String message=driver.findElement(By.xpath("//div[@class='toast-message']")).getText();
 	    System.out.println(message);*/
-	    Thread.sleep(3000);
+	    Thread.sleep(5000);
 	    driver.findElement(By.xpath("(//a[contains(@class,'pointer ')])[1]")).click();
 	    
 	

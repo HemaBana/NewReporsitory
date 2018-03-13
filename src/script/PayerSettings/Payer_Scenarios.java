@@ -81,8 +81,9 @@ public class Payer_Scenarios extends BaseTest{
       
         Thread.sleep(2000);
        p.clicksave();
-       //String message=driver.findElement(By.xpath(".//*[@id='toast-container']/div/div/div")).getText();
-	   //System.out.println(message);
+       Thread.sleep(2000);
+       String message=driver.findElement(By.xpath(".//*[@id='toast-container']/div/div/div")).getText();
+	   System.out.println(message);
        Lib.getSnapShot(driver, "./Snap","Payer"  );
 	   
 }
