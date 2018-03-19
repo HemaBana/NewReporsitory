@@ -20,9 +20,15 @@ public class Remits extends LoginPage  {
 	@FindBy(xpath="//button[text()='Search']")
 	 private WebElement SearchIcon;
 	
-
+	@FindBy(xpath="//i[text()='edit']")
+	 private WebElement EditIcon;
 	
-
+	@FindBy(xpath="(//span[contains(text(),'Encounter Details')])[1]")
+	 private WebElement EncounterTab;
+	
+	@FindBy(xpath="(//button[contains(text(),'Apply Action')])[2]")
+	 private WebElement ApplyActionButton;
+	
 public Remits(WebDriver driver)
 {
 	super(driver); 
@@ -50,5 +56,17 @@ public void clickClaimRemits(){
 
 		 }
 	
+	 public void clickEditIcon(){
+		 EditIcon.click(); 
+
+		 }
+	 public void clickEncounterTab(){
+		 EncounterTab.click(); 
+
+		 }
+	 public void clickApplyActionButton(){
+		 ApplyActionButton.click(); 
+
+		 }
 	 
 }

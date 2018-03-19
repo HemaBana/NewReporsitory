@@ -58,7 +58,7 @@ public class Payer_Scenarios extends BaseTest{
         
 
          
-        driver.findElement(By.xpath("//input[@type='search']")).sendKeys("Hou");
+        driver.findElement(By.xpath("//input[@type='search']")).sendKeys("kit");
 
 		/*String xp="//div[contains(text(),'Hou')]";
 		
@@ -122,7 +122,7 @@ public class Payer_Scenarios extends BaseTest{
         
         Thread.sleep(5000);
         driver.findElement(By.xpath("//input[@type='search']")).clear(); 
-        driver.findElement(By.xpath("//input[@type='search']")).sendKeys("Hou");
+        driver.findElement(By.xpath("//input[@type='search']")).sendKeys("kit");
 
 		/*String xp="//div[contains(text(),'Hou')]";
 		
