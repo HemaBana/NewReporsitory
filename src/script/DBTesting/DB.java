@@ -17,6 +17,7 @@ public class DB {
 		
 		 Class.forName(driver);
 		
+		 
 		 Connection conn = DriverManager.getConnection(url);
 		 Statement statement = conn.createStatement();
 		 System.out.println("pass");

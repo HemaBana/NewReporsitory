@@ -15,7 +15,7 @@ public class dbval {
 		 String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 		
 		 Class.forName(driver);
-		
+
 		 Connection conn = DriverManager.getConnection(url);
 		 Statement statement = conn.createStatement();
 		 System.out.println("pass");
