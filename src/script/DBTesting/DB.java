@@ -1,3 +1,4 @@
+
 package script.DBTesting;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,7 +8,7 @@ import java.sql.Statement;
 
 
 
-public class dbval {
+public class DB {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		
 		String url = "jdbc:sqlserver://pmswebdatabasedev.database.windows.net;databaseName=PMSWebTenantDB_UAT_QA1;user=qalogin;password=1231!#HOLA!";
@@ -19,15 +20,13 @@ public class dbval {
 		 Connection conn = DriverManager.getConnection(url);
 		 Statement statement = conn.createStatement();
 		 System.out.println("pass");
-		 ResultSet resultSet = statement.executeQuery("select * from [dbo].[Claims] where ClaimId='ACF622C0-8B70-4FFE-8DD6-02C3DCDB069A';");		 
-		 while (resultSet .next()) {
-				System.out.println(resultSet .getString(1) + "  " + resultSet.getString(2) + "  " + resultSet.getString(3) + "  "
-				+ resultSet.getString(4) + "  " + resultSet.getString(5));
-			}
-			
-			if (resultSet != null) {
+		 ResultSet rs = statement.executeQuery("select * from [dbo].[Claims] where ClaimId='ACF622C0-8B70-4FFE-8DD6-02C3DCDB069A';");		 
+		 while(rs.next()){
+		 System.out.println(rs.getString("SuperBillId"));
+		 }
+		 if (rs != null) {
 				try {
-					resultSet.close();
+					rs.close();
 				} catch (Exception e) {
 				}
 			}
@@ -47,13 +46,8 @@ public class dbval {
 			}
 		}
 
-
-
-		}
+		
+		
 	
 
-
-
-
-
-	
+}
