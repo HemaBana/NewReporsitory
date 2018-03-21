@@ -21,7 +21,7 @@ public class dbval {
 		 System.out.println("pass");
 		 ResultSet rs = statement.executeQuery("select * from [dbo].[Claims] where ClaimId='ACF622C0-8B70-4FFE-8DD6-02C3DCDB069A';");		 
 		 while(rs.next()){
-			 System.out.println(rs.getString("SuperBillId"));
+		 System.out.println(rs.getString("SuperBillId"));
 	
 		
 		
