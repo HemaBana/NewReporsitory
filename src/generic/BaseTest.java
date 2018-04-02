@@ -77,13 +77,13 @@ public void testLogin() throws InterruptedException{
 			//String title=Lib.getCellValue(IAutoConst.XLPATH,"ValidLogin",1,2);
 			LoginPage l=new LoginPage(driver);
 			l.setUserName(un);
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			l.clickNext();
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			l.setPassword(pw);
 			l.clickLogin();
 			l.clickSign();
-			Thread.sleep(10000);
+			Thread.sleep(5000);
 		
 		
 			WebElement Partice = driver.findElement(By.xpath("//select[contains(@ng-options,'PracticeId')]"));
@@ -105,12 +105,12 @@ public void testLogin() throws InterruptedException{
 				WebElement Facility = driver.findElement(By.xpath("//select[contains(@ng-options,'BusinessUnitId')]"));
 			  	Select select2=new Select(Facility);
 			    select2.selectByIndex(1);
-			    Thread.sleep(9000);	
+			    Thread.sleep(5000);	
 			
 			    WebElement Role = driver.findElement(By.xpath("//select[contains(@ng-options,'RoleId')]"));
 			  	Select select3=new Select(Role);
 			    select3.selectByIndex(1);
-			    Thread.sleep(9000);	
+			    Thread.sleep(5000);	
 			    driver.findElement(By.xpath("//option[contains(text(),'Front')]")).click();
 				driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
 		
