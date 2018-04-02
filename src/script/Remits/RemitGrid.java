@@ -29,7 +29,7 @@ public class RemitGrid extends BaseTest
          Thread.sleep(3000);
          r.clickFilter();
          Thread.sleep(3000);
-         driver.findElement(By.name("claimNo")).sendKeys("12121898772377312018");
+         driver.findElement(By.name("claimNo")).sendKeys("2312sfdvsdxcv2115201");
          Thread.sleep(3000);
          r.clickSearchIcon();
          Thread.sleep(3000);
